@@ -45,12 +45,6 @@ notebook()
 ```
 
 to launch the IJulia notebook in your browser.
-The first time you run `notebook()`, it will prompt you
-for whether it should install Jupyter.  Hit enter to
-have it use the [Conda.jl](https://github.com/Luthaf/Conda.jl)
-package to install a minimal Python+Jupyter distribution (via
-[Miniconda](http://conda.pydata.org/docs/install/quick.html)) that is
-private to Julia (not in your `PATH`).
 
 For more advanced installation options, such as specifying a specific Jupyter
 installation to use, see the [documentation](https://JuliaLang.github.io/IJulia.jl/stable).

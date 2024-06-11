@@ -10,16 +10,6 @@ notebook()
 ```
 to launch the IJulia notebook in your browser.
 
-The first time you run `notebook()`, it will prompt you
-for whether it should install Jupyter.  Hit enter to
-have it use the [Conda.jl](https://github.com/Luthaf/Conda.jl)
-package to install a minimal Python+Jupyter distribution (via
-[Miniconda](http://conda.pydata.org/docs/install/quick.html)) that is
-private to Julia (not in your `PATH`).
-On Linux, it defaults to looking for `jupyter` in your `PATH` first,
-and only asks to installs the Conda Jupyter if that fails; you can force
-it to use Conda on Linux by setting `ENV["JUPYTER"]=""` during installation (see above).  (In a Debian or Ubuntu  GNU/Linux system, install the package `jupyter-client` to install the system `jupyter`.)
-
 You can
 use `notebook(detached=true)` to launch a notebook server
 in the background that will persist even when you quit Julia.
@@ -45,10 +35,6 @@ from the command line (the
 [Terminal](https://en.wikipedia.org/wiki/Terminal_%28OS_X%29) program
 in MacOS or the [Command
 Prompt](https://en.wikipedia.org/wiki/Command_Prompt) in Windows).
-Note that if you installed `jupyter` via automated Miniconda installer
-in `Pkg.add`, above, then `jupyter` may not be in your `PATH`; type
-`import Conda; Conda.SCRIPTDIR` in Julia to find out where Conda
-installed `jupyter`.
 
 A "dashboard" window like this should open in your web browser.  Click
 on the *New* button and choose the *Julia* option to start a new
@@ -72,8 +58,7 @@ using IJulia
 jupyterlab()
 ```
 
-Like `notebook()`, above, this will install JupyterLab via Conda if it is
-not installed already.   `jupyterlab()` also supports `detached` and `dir` keyword options similar to `notebook()`.
+`jupyterlab()` also supports `detached` and `dir` keyword options similar to `notebook()`.
 
 
 ## Running nteract

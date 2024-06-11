@@ -98,8 +98,6 @@ of Jupyter.  Note that IPython 3.0 was released in February 2015, so
 if you have an older operating system you may
 have to [install IPython
 manually](http://ipython.org/ipython-doc/stable/install/install.html).
-On Mac and Windows systems, it is currently easiest to use the
-[Anaconda Python](http://continuum.io/downloads) installer.
 
 * To use the [IPython notebook](http://ipython.org/notebook.html) interface, which runs in your web
   browser and provides a rich multimedia environment, you will need
